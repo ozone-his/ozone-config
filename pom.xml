@@ -120,7 +120,7 @@
             <configuration>
               <target>
                 <move todir="${distro.eipRoutesDir}/routes/odoo">
-                  <fileset dir="${distro.eipRoutesDir}/openmrs-odoo-${eipRoutesOdoo}/routes" />
+                  <fileset dir="${distro.eipRoutesDir}/openmrs-odoo-${eipRoutesOdoo}/routes"></fileset>
                 </move>
               </target>
             </configuration>
@@ -135,6 +135,21 @@
               <target>
                 <delete includeEmptyDirs="true">
                   <fileset dir="${distro.eipRoutesDir}/openmrs-odoo-${eipRoutesOdoo}" />
+                </delete>
+              </target>
+            </configuration>
+            <goals>
+              <goal>run</goal>
+            </goals>
+          </execution>
+          <execution>
+            <id>remove-obs-and-prp-routes</id>
+            <phase>package</phase>
+            <configuration>
+              <target>
+                <delete includeEmptyDirs="true">
+                  <fileset dir="${distro.eipRoutesDir}/routes/odoo/obs" />
+                  <fileset dir="${distro.eipRoutesDir}/routes/odoo/prp" />
                 </delete>
               </target>
             </configuration>
