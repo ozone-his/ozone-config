@@ -4,7 +4,7 @@
   <artifactId>ozone-config</artifactId>
   <name>Ozone Configuration</name>
   <description>Configuration files needed for Ozone HIS</description>
-  <version>1.0.0-SNAPSHOT</version>
+  <version>1.0.0-beta1</version>
   <packaging>pom</packaging>
 
   <developers>
@@ -23,7 +23,7 @@
     <distro.eipRoutesDir>${distro.baseDir}/eip_config</distro.eipRoutesDir>
     <!-- EIP routes -->
     <eipRoutesSenaite>1.0.0-SNAPSHOT</eipRoutesSenaite>
-    <eipRoutesOdoo>1.0.0-SNAPSHOT</eipRoutesOdoo>
+    <eipRoutesOdoo>1.0.0-beta1</eipRoutesOdoo>
 
     <!-- EIP override properties -->
     <db-event.destinations>direct:odoo-event-listener</db-event.destinations>
@@ -170,7 +170,7 @@
       <plugin>
         <groupId>com.atlassian.maven.plugins</groupId>
         <artifactId>bash-maven-plugin</artifactId>
-        <version>1.0-SNAPSHOT</version>
+        <version>1.0.0</version>
         <executions>
           <execution>
             <id>test</id>
