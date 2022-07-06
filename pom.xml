@@ -4,7 +4,7 @@
   <artifactId>ozone-config</artifactId>
   <name>Ozone Configuration</name>
   <description>Configuration files needed for Ozone HIS</description>
-  <version>1.0.0-SNAPSHOT</version>
+  <version>1.0.0-beta2</version>
   <packaging>pom</packaging>
 
   <developers>
