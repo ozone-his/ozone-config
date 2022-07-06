@@ -23,7 +23,7 @@
     <distro.eipRoutesDir>${distro.baseDir}/eip_config</distro.eipRoutesDir>
     <!-- EIP routes -->
     <eipRoutesSenaite>1.0.0-SNAPSHOT</eipRoutesSenaite>
-    <eipRoutesOdoo>1.0.0-SNAPSHOT</eipRoutesOdoo>
+    <eipRoutesOdoo>1.0.0-beta2</eipRoutesOdoo>
 
     <!-- EIP override properties -->
     <db-event.destinations>direct:odoo-event-listener</db-event.destinations>
